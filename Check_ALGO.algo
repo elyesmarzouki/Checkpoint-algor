@@ -1,0 +1,29 @@
+ALGORITHM Check_ALGO
+
+VAR
+NBC : INTEGER := 0
+NBW : INTEGER := 0
+NBV : INTEGER := 0
+
+CONST
+STR : STRING;
+
+BEGIN
+
+//The length of the sentence
+WHILE (STR[i] <> ".") DO
+    NBC :=NBC+1
+
+//The number of words in the sentence
+IF (STR[i] = " ") THEN
+    NBW := NBW+1
+END_IF
+
+//The number of vowels in the sentence
+IF (STR[i] = "a" OR STR[i] = "e" OR STR[i] = "u" OR STR[i] = "i" OR STR[i] = "Y" OR STR[i] = "O") THEN
+    NBV := NBV+1
+END_IF
+
+END_WHILE
+
+END
